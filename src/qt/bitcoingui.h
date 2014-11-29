@@ -14,6 +14,7 @@ class SendCoinsDialog;
 class SignVerifyMessageDialog;
 class Notificator;
 class RPCConsole;
+class ChatWindow;
 
 QT_BEGIN_NAMESPACE
 class QLabel;
@@ -72,7 +73,7 @@ private:
     QLabel *labelBlocksIcon;
     QLabel *progressBarLabel;
     QProgressBar *progressBar;
-
+    ChatWindow *chatWindow;
     QMenuBar *appMenuBar;
     QAction *overviewAction;
     QAction *historyAction;
@@ -93,6 +94,7 @@ private:
     QAction *lockWalletAction;
     QAction *aboutQtAction;
     QAction *openRPCConsoleAction;
+    QAction *chatAction;
 
     QSystemTrayIcon *trayIcon;
     Notificator *notificator;
@@ -145,6 +147,7 @@ private slots:
     void gotoReceiveCoinsPage();
     /** Switch to send coins page */
     void gotoSendCoinsPage();
+    void gotoChatPage();
 
     /** Show Sign/Verify Message dialog and switch to sign message tab */
     void gotoSignMessageTab(QString addr = "");

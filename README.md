@@ -1,7 +1,7 @@
 
 MobCoin
 
-MobCoin is a PoS-based cryptocurrency which was distributed through an initial 25,000 block PoW mining period.
+MobCoin is a PoS-based cryptocurrency which was distributed through an initial 19900 block PoW mining period.
 
 RPC Port: 12153
 P2P Port: 12151
